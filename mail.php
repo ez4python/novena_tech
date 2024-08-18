@@ -7,7 +7,7 @@
         
         # Sender Data
         $subject = trim($_POST["subject"]);
-        $sphone = trim($_POST["phone"]);
+        $phone = trim($_POST["phone"]);
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
